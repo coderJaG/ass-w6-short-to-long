@@ -53,8 +53,8 @@ function shortestToLongest(strings, sorted = []) {
   let tracker = strings[0];
   let index;
   strings.forEach((ele, i) => {
-  
-    if (ele.length < tracker.length || (ele.length === tracker.length && ele < tracker)) {
+
+    if (ele.length < tracker.length || ele.length === tracker.length && ele < tracker) {
       tracker = ele
       index = i
     }
